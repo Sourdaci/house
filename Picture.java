@@ -99,4 +99,13 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    /**
+     * Make suns move
+     */
+    public void moveSun()
+    {
+        sun.slowMoveVertical(180);
+        sun2.slowMoveVertical(180);
+    }
 }
