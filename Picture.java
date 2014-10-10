@@ -83,6 +83,8 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            sun2.changeColor("black");
+            floor.changeColor("black");
         }
     }
 
@@ -107,5 +109,6 @@ public class Picture
     {
         sun.slowMoveVertical(180);
         sun2.slowMoveVertical(180);
+        setBlackAndWhite();
     }
 }
