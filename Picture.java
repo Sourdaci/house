@@ -17,6 +17,7 @@ public class Picture
     private Circle sun;
     private Circle sun2;
     private Circle floor;
+    private Person habitant;
 
     /**
      * Constructor for objects of class Picture
@@ -110,5 +111,17 @@ public class Picture
         sun.slowMoveVertical(180);
         sun2.slowMoveVertical(180);
         setBlackAndWhite();
+    }
+    
+    /**
+     * A person approaches house from left
+     */
+    public void habitantGetCloser()
+    {
+        habitant = new Person();
+        habitant.moveHorizontal(-300);
+        habitant.moveVertical(20);
+        habitant.makeVisible();
+        habitant.slowMoveHorizontal(160);
     }
 }
